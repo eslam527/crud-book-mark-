@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Mark System</title>
+</head>
+<body>
+    
+<div class="container text-center p-5 text-capitalize">
+    <div class="row my-5">
+        <div class="col-sm-12">
+            <h1 class="fs-1 ">wellcome in  <span class="text-info">my Book Mark</span> System</h1>
+        </div>
+
+    </div>
+    <div class="row border-i">
+        <div class="col-sm-12">
+            <div class="form d-none position-relative" id="form">
+                <div class="close btn btn-danger" id="clos" onclick="clos()">
+                    <i class="fa-solid fa-xmark fs-2"></i>
+
+                </div>
+                 <div class="book-name my-5 position-relative ">
+                    <div class="logo">
+                        <img src="images/person-blue-shirt.png" alt="">
+                    </div>
+    
+                    <input type="text" id="book-name" class="form-control" placeholder="Book Name">
+                 </div>
+                 <div class="book-url my-4">
+                    <input type="url" id="book-url" placeholder="Book Url" class="form-control">
+                 </div>
+
+
+            </div>
+            <div class="buttons m-5" id="add">
+                <button class="btn btn-secondary d-block m-auto" onclick="add()" id="sup">Add Book</button>
+                <button class="btn btn-warning d-none m-auto" id="update" onclick="finiyUpdate()">update</button>
+
+             </div>
+             <div class="serch m-4 w-50 mx-auto">
+                <input type="text" placeholder="Search Here" class="form-control" oninput="search()" id="serch">
+             </div>
+        </div>
+
+    </div>
+<div class="container">
+    <div class="row my-4" id="row">
+        <div class="col-sm-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>index</th>
+                        <th>book name</th>
+                        <th>book url</th>
+                        <th>viste</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+    
+                </thead>
+                <tbody id="body">
+                    <!-- <tr class="">
+                        <td>0</td>
+                        <td>the lord of the rings</td>
+                        <td>https://drive.google.com/drive/home</td>
+                        <td><a href="#" class="btn btn-info" >viste<i class="fa-solid fa-eye-low-vision"></i></a></td>
+                        <td><button class="btn btn-warning" id="update">update<i class="fa-solid fa-pen-nib"></i></button></td>
+                        <td><button class="btn btn-danger" id="delete">delete<i class="fa-solid fa-trash"></i></button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

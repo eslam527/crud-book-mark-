@@ -1,0 +1,27 @@
+.logo{
+    position: absolute;
+    left: 50%;
+    top: -109px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.border-i{
+    border-bottom: 2px dotted #000;
+}
+.close{
+    /* transform: translateX(600%);
+    -webkit-transform: translateX(600%);
+    -moz-transform: translateX(600%);
+    -ms-transform: translateX(600%);
+    -o-transform: translateX(600%); */
+    /* margin-left: auto; */
+    position: absolute;
+    right: 0;
+    top: -70%;
+}
+.dlt{
+    display: none!important;
+}
